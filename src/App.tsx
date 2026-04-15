@@ -7,12 +7,12 @@ function App() {
 
   return (
     <div className='h-screen bg-neutral-blue-100 flex justify-center md:items-center'>
-      <div className='w-full md:w-230 md:px-3 md:py-3 bg-white rounded-xl'>
+      <div className='w-full md:w-230 md:px-3 md:py-3 md:bg-white rounded-xl'>
 
         {/* Mobile */}
-        <div className="md:hidden">
+        <div className="relative md:hidden">
           <MobileSidebar />
-          <YourInfo />
+          <div className='absolute top-25 bg-white rounded-lg w-85 h-110 sm:w-110 sm:h-110 sm:top-43 left-1/2 -translate-x-1/2'><YourInfo /></div>
         </div>
 
         {/* Desktop */}
