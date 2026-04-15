@@ -6,7 +6,7 @@ function DesktopSidebar() {
 
     return (
         <div className="relative">
-            <img src={siderbarDesktop} alt="sidebarDesktop" className="max-w-65 lg:max-w-full" />
+            <img src={siderbarDesktop} alt="sidebarDesktop" className="w-full"/>
             <div className="absolute left-1/7 top-1/14 flex flex-col gap-8 text-white">
                 {
                     sidebarList.map((item) => (
