@@ -12,7 +12,9 @@ function App() {
         {/* Mobile */}
         <div className="relative md:hidden">
           <MobileSidebar />
-          <div className='absolute top-25 bg-white rounded-lg w-85 h-110 sm:w-110 sm:h-110 sm:top-43 left-1/2 -translate-x-1/2'><YourInfo /></div>
+          <div className='absolute top-25 bg-white rounded-lg w-85 h-110 sm:w-110 sm:h-110 sm:top-43 left-1/2 -translate-x-1/2'>
+            <YourInfo />
+          </div>
         </div>
 
         {/* Desktop */}
