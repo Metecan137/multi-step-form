@@ -1,5 +1,6 @@
 import './App.css'
 import DesktopSidebar from './components/DesktopSidebar'
+import FormButtons from './components/FormButtons'
 import MobileSidebar from './components/MobileSidebar'
 import YourInfo from './components/YourInfo'
 
@@ -16,6 +17,8 @@ function App() {
             <YourInfo />
           </div>
         </div>
+        <div className='fixed bottom-0 left-0 right-0 px-6 py-4 md:hidden bg-white'><FormButtons /></div>
+
 
         {/* Desktop */}
         <div className='hidden md:grid md:grid-cols-[240px_1fr] lg:grid-cols-[274px_1fr] transition-all'>

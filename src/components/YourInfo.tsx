@@ -14,7 +14,7 @@ function YourInfo() {
                 <input {...register("email")} className="w-full border rounded-lg h-12 mt-1 border-neutral-grey-500 p-4" placeholder="Enter email" />
                 <label className="text-sm text-primary-blue-950 mt-4">Phone Number</label>
                 <input {...register("phoneNumber")} className="w-full border rounded-lg h-12 mt-1 border-neutral-grey-500 p-4" placeholder="Enter your phone number" />
-                <FormButtons />
+                <div className="hidden md:block"><FormButtons /></div>
             </form>
         </div>
     )
