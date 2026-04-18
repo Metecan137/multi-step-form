@@ -16,7 +16,7 @@ const multiformSlice = createSlice({
     },
     reducers:{
         increaseButtonCount : (state) => {
-            if(state.buttonCount < 4) {
+            if(state.buttonCount < 5) {
                 state.buttonCount++
             }
         },
@@ -46,8 +46,10 @@ const multiformSlice = createSlice({
             }else {
                 state.ons.push(action.payload)
             }
-        }
-
+        },
+        makeButtonSelectPlan: (state) => {
+            state.buttonCount = 2
+        },
     },
 })
 
@@ -56,6 +58,6 @@ export const ons = (state: RootState) => state.multiform.ons
 export const timeToggle = (state: RootState) => state.multiform.toggle
 export const selectPlan = (state: RootState) => state.multiform.selectPlan
 export const formInfo = (state: RootState) => state.multiform.formValues
-export const {increaseButtonCount, decreaseButtonCount, addFormValues, setSelectPlan, toggleTime, addOnsToList } = multiformSlice.actions
+export const {increaseButtonCount, decreaseButtonCount, addFormValues, setSelectPlan, toggleTime, addOnsToList, makeButtonSelectPlan } = multiformSlice.actions
 export const buttonCount = (state: RootState) => state.multiform.buttonCount
 export default multiformSlice.reducer

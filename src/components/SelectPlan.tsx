@@ -10,10 +10,6 @@ function SelectPlan() {
   const selctPlan = useSelector(selectPlan)
   const toggle = useSelector(timeToggle)
 
-  console.log(selctPlan.price)
-
-
-
   return (
     <div className="flex flex-col md:pt-10 md:px-24 pt-6 px-6 h-120 lg:h-140">
       <div className="h-full">

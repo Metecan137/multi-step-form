@@ -6,7 +6,7 @@ export interface FormValues {
 
 export interface SelectPlan {
     plan: string
-    price: Number
+    price: number
 }
 
 export interface Ons {

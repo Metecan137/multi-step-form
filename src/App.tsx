@@ -7,6 +7,8 @@ import SelectPlan from './components/SelectPlan'
 import YourInfo from './components/YourInfo'
 import { buttonCount } from './features/multiformSlice/multiformSlice'
 import AddOns from './components/AddOns'
+import Summary from './components/Summary'
+import Finished from './components/Finished'
 
 function App() {
   const buttonNumber = useSelector(buttonCount)
@@ -22,6 +24,8 @@ function App() {
             {buttonNumber === 1 && <YourInfo />}
             {buttonNumber === 2 && <SelectPlan />}
             {buttonNumber === 3 && <AddOns />}
+            {buttonNumber === 4 && <Summary />}
+            {buttonNumber === 5 && <Finished />}
           </div>
         </div>
         <div className='fixed bottom-0 left-0 right-0 px-6 py-4 md:hidden bg-white'><FormButtons /></div>
@@ -33,6 +37,8 @@ function App() {
           {buttonNumber === 1 && <YourInfo />}
           {buttonNumber === 2 && <SelectPlan />}
           {buttonNumber === 3 && <AddOns />}
+          {buttonNumber === 4 && <Summary />}
+          {buttonNumber === 5 && <Finished />}
         </div>
       </div>
     </div>

@@ -15,7 +15,6 @@ function YourInfo() {
         }
     })
     const onSubmit: SubmitHandler<FormValues> = (data) => {
-        console.log("submit tetiklendi", data)
         dispatch(addFormValues(data))
         dispatch(increaseButtonCount())
     }
