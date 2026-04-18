@@ -28,7 +28,7 @@ function App() {
             {buttonNumber === 5 && <Finished />}
           </div>
         </div>
-        <div className='fixed bottom-0 left-0 right-0 px-6 py-4 md:hidden bg-white'><FormButtons /></div>
+        {buttonNumber !== 5 && <div className='fixed bottom-0 left-0 right-0 px-6 py-4 md:hidden bg-white'><FormButtons /></div>}
 
 
         {/* Desktop */}
