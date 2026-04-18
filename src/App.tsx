@@ -6,6 +6,7 @@ import MobileSidebar from './components/MobileSidebar'
 import SelectPlan from './components/SelectPlan'
 import YourInfo from './components/YourInfo'
 import { buttonCount } from './features/multiformSlice/multiformSlice'
+import AddOns from './components/AddOns'
 
 function App() {
   const buttonNumber = useSelector(buttonCount)
@@ -17,9 +18,10 @@ function App() {
         {/* Mobile */}
         <div className="relative md:hidden">
           <MobileSidebar />
-          <div className='absolute top-25 bg-white rounded-lg w-85 h-110 sm:w-110 sm:h-110 sm:top-43 left-1/2 -translate-x-1/2'>
+          <div className='absolute top-25 bg-white rounded-lg w-85 h-110 sm:w-110 sm:h-110 sm:top-43 left-1/2 -translate-x-1/2 transition-all'>
             {buttonNumber === 1 && <YourInfo />}
             {buttonNumber === 2 && <SelectPlan />}
+            {buttonNumber === 3 && <AddOns />}
           </div>
         </div>
         <div className='fixed bottom-0 left-0 right-0 px-6 py-4 md:hidden bg-white'><FormButtons /></div>
@@ -30,6 +32,7 @@ function App() {
           <DesktopSidebar />
           {buttonNumber === 1 && <YourInfo />}
           {buttonNumber === 2 && <SelectPlan />}
+          {buttonNumber === 3 && <AddOns />}
         </div>
       </div>
     </div>
